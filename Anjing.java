@@ -1,29 +1,29 @@
-public class Anjing extends Hewan {
-    private String ras;
+public class Ayam extends Hewan {
+    private String jenisAyam;
 
     // Constructor Overloading
-    public Anjing() {
+    public Ayam() {
         super();
-        this.ras = "Tidak diketahui";
+        this.jenisAyam = "Tidak diketahui";
     }
 
-    public Anjing(String nama, int umur, String ras) {
+    public Ayam(String nama, int umur, String jenisAyam) {
         super(nama, umur);  // Inheritance
-        this.ras = ras;
+        this.jenisAyam = jenisAyam;
     }
 
     // Setter dan Getter
-    public void setRas(String ras) {
-        this.ras = ras;
+    public void setJenisAyam(String jenisAyam) {
+        this.jenisAyam = jenisAyam;
     }
 
-    public String getRas() {
-        return ras;
+    public String getJenisAyam() {
+        return jenisAyam;
     }
 
     // Overriding method suara() (Polimorfisme)
     @Override
     public void suara() {
-        System.out.println(getNama() + " menggonggong!");
+        System.out.println(getNama() + " berkokok!");
     }
 }
